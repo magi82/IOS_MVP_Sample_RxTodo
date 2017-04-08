@@ -15,7 +15,7 @@ final class MainPresenter {
   weak fileprivate var view: MainViewDelegate?
 }
 
-// MARK: - MainPresenterDelegate attach & detach
+// MARK: - MainPresenterDelegate
 
 extension MainPresenter: MainPresenterDelegate {
   

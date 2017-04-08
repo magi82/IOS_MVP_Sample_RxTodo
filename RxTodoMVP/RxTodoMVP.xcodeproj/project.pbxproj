@@ -20,6 +20,9 @@
 		D8E6F4371E97DD1C00C6966B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */; };
 		D8E6F43F1E98AAED00C6966B /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */; };
 		D8E6F4441E98C34000C6966B /* InjectorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4431E98C34000C6966B /* InjectorUtil.swift */; };
+		D8E6F4481E98CCD800C6966B /* NewTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4471E98CCD800C6966B /* NewTodoViewController.swift */; };
+		D8E6F44A1E98D27E00C6966B /* NewTodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4491E98D27E00C6966B /* NewTodoDelegate.swift */; };
+		D8E6F44C1E98D29300C6966B /* NewTodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F44B1E98D29300C6966B /* NewTodoPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
 		D8E6F4431E98C34000C6966B /* InjectorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InjectorUtil.swift; path = Utils/InjectorUtil.swift; sourceTree = "<group>"; };
+		D8E6F4471E98CCD800C6966B /* NewTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewTodoViewController.swift; path = Presentations/NewTodo/NewTodoViewController.swift; sourceTree = "<group>"; };
+		D8E6F4491E98D27E00C6966B /* NewTodoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewTodoDelegate.swift; path = Presentations/NewTodo/NewTodoDelegate.swift; sourceTree = "<group>"; };
+		D8E6F44B1E98D29300C6966B /* NewTodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewTodoPresenter.swift; path = Presentations/NewTodo/NewTodoPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 		3D4A6A2A1E95E71500DED999 /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
+				D8E6F4461E98CC6D00C6966B /* New */,
 				3D4A6A2B1E95E71B00DED999 /* Main */,
 			);
 			name = Presentations;
@@ -119,9 +126,9 @@
 		3D4A6A2B1E95E71B00DED999 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				3D4A6A2E1E95E77A00DED999 /* ViewController.swift */,
-				D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */,
 				D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */,
+				D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */,
+				3D4A6A2E1E95E77A00DED999 /* ViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -194,6 +201,16 @@
 				D8E6F4431E98C34000C6966B /* InjectorUtil.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		D8E6F4461E98CC6D00C6966B /* New */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6F4491E98D27E00C6966B /* NewTodoDelegate.swift */,
+				D8E6F44B1E98D29300C6966B /* NewTodoPresenter.swift */,
+				D8E6F4471E98CCD800C6966B /* NewTodoViewController.swift */,
+			);
+			name = New;
 			sourceTree = "<group>";
 		};
 		E23598ACAFC676949AC28C20 /* Frameworks */ = {
@@ -489,6 +506,9 @@
 				D8E6F4371E97DD1C00C6966B /* MainPresenter.swift in Sources */,
 				3D4A6A351E95E86500DED999 /* AppDelegate.swift in Sources */,
 				3D4A6A2F1E95E77A00DED999 /* ViewController.swift in Sources */,
+				D8E6F44A1E98D27E00C6966B /* NewTodoDelegate.swift in Sources */,
+				D8E6F4481E98CCD800C6966B /* NewTodoViewController.swift in Sources */,
+				D8E6F44C1E98D29300C6966B /* NewTodoPresenter.swift in Sources */,
 				D8E6F43F1E98AAED00C6966B /* MainDelegate.swift in Sources */,
 				D8E6F42F1E97CFFB00C6966B /* BaseViewController.swift in Sources */,
 				D8E6F4441E98C34000C6966B /* InjectorUtil.swift in Sources */,

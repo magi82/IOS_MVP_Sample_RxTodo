@@ -10,6 +10,8 @@ import UIKit
 
 import Then
 import SnapKit
+import RxSwift
+import RxCocoa
 
 final class ViewController: BaseViewController {
 
@@ -27,6 +29,8 @@ final class ViewController: BaseViewController {
     $0.delegate = self
     $0.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
   }
+  
+  let addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
   
   // MARK: Initializing
   
@@ -48,23 +52,20 @@ final class ViewController: BaseViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-    
-    view.addSubview(tableView)
     
     presenter.attachView(self)
     presenter.configure()
+    
+    navigationItem.rightBarButtonItem = addButtonItem
+    view.addSubview(tableView)
+    
+    onEventAction()
   }
   
   override func setupConstraints() {
     tableView.snp.makeConstraints { make in
       make.edges.equalTo(0)
     }
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 }
 
@@ -79,9 +80,29 @@ extension ViewController: MainViewDelegate {
   }
 }
 
+// MARK: RX
+
+extension ViewController {
+  
+  func onEventAction() {
+    addButtonItem.rx.tap
+      .subscribe(onNext: { [weak self] in
+        guard let `self` = self else { return }
+        
+        let newTodoPresenter = InjectorUtil.getInstance().provideNewTodoPresenter()
+        let newTodoViewController = NewTodoViewController(presenter: newTodoPresenter)
+        let navigationViewController = UINavigationController(
+          rootViewController: newTodoViewController)
+        self.present(navigationViewController, animated: true, completion: nil)
+      })
+      .addDisposableTo(dispose)
+  }
+}
+
 // MARK: - UITableViewDelegate
 
 extension ViewController: UITableViewDelegate {
+  
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     print(displayTodoList[indexPath.row])
   }

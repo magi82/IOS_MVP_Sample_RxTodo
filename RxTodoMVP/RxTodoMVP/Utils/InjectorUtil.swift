@@ -23,4 +23,8 @@ final class InjectorUtil {
   func provideMainPresenter() -> MainPresenterDelegate {
     return MainPresenter()
   }
+  
+  func provideNewTodoPresenter() -> NewTodoPresenterDelegate {
+    return NewTodoPresenter()
+  }
 }
