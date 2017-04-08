@@ -12,7 +12,7 @@ final class MainPresenter {
   
   // MARK: Properties
   
-  fileprivate weak var view: MainViewDelegate?
+  weak fileprivate var view: MainViewDelegate?
 }
 
 // MARK: - MainPresenterDelegate attach & detach
