@@ -16,6 +16,9 @@
 		506D1D21C67AC31070010D47 /* Pods_RxTodoMVPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2D7F3CA0B90323B2A18E8D4 /* Pods_RxTodoMVPTests.framework */; };
 		56E413F33296FD6189BE49F6 /* Pods_RxTodoMVPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7222C1FB0D81584715D85BC6 /* Pods_RxTodoMVPUITests.framework */; };
 		BA4334C20897CC1512A1974E /* Pods_RxTodoMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80FD639F701FEBBF4E861AD /* Pods_RxTodoMVP.framework */; };
+		D8E6F42F1E97CFFB00C6966B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F42E1E97CFFB00C6966B /* BaseViewController.swift */; };
+		D8E6F4371E97DD1C00C6966B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */; };
+		D8E6F43F1E98AAED00C6966B /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		A80FD639F701FEBBF4E861AD /* Pods_RxTodoMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodoMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93E73355F4B9238E8402FC4 /* Pods-RxTodoMVPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodoMVPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTodoMVPTests/Pods-RxTodoMVPTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2D7F3CA0B90323B2A18E8D4 /* Pods_RxTodoMVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodoMVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E6F42E1E97CFFB00C6966B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Cores/BaseViewController.swift; sourceTree = "<group>"; };
+		D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				3D4A6A2E1E95E77A00DED999 /* ViewController.swift */,
+				D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */,
+				D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 		3D4A6A331E95E7D300DED999 /* Cores */ = {
 			isa = PBXGroup;
 			children = (
+				D8E6F42E1E97CFFB00C6966B /* BaseViewController.swift */,
 			);
 			name = Cores;
 			sourceTree = "<group>";
@@ -466,8 +475,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E6F4371E97DD1C00C6966B /* MainPresenter.swift in Sources */,
 				3D4A6A351E95E86500DED999 /* AppDelegate.swift in Sources */,
 				3D4A6A2F1E95E77A00DED999 /* ViewController.swift in Sources */,
+				D8E6F43F1E98AAED00C6966B /* MainDelegate.swift in Sources */,
+				D8E6F42F1E97CFFB00C6966B /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
