@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window.backgroundColor = .white
     window.makeKeyAndVisible()
     
-    let viewController = ViewController(presenter: MainPresenter())
+    let presenter = InjectorUtil.getInstance().provideMainPresenter()
+    let viewController = ViewController(presenter: presenter)
     let navigationViewController = UINavigationController(rootViewController: viewController)
     
     window.rootViewController = navigationViewController

@@ -19,6 +19,7 @@
 		D8E6F42F1E97CFFB00C6966B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F42E1E97CFFB00C6966B /* BaseViewController.swift */; };
 		D8E6F4371E97DD1C00C6966B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */; };
 		D8E6F43F1E98AAED00C6966B /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */; };
+		D8E6F4441E98C34000C6966B /* InjectorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4431E98C34000C6966B /* InjectorUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D8E6F42E1E97CFFB00C6966B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Cores/BaseViewController.swift; sourceTree = "<group>"; };
 		D8E6F4361E97DD1C00C6966B /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		D8E6F43E1E98AAED00C6966B /* MainDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
+		D8E6F4431E98C34000C6966B /* InjectorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InjectorUtil.swift; path = Utils/InjectorUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4A6A331E95E7D300DED999 /* Cores */,
+				D8E6F4451E98C34900C6966B /* Utils */,
 				3D4A6A2A1E95E71500DED999 /* Presentations */,
 				3D4A6A341E95E86500DED999 /* AppDelegate.swift */,
 				3DA0E2B21E95E4FB009A98FA /* Info.plist */,
@@ -183,6 +186,14 @@
 				3DA0E2C81E95E4FB009A98FA /* Info.plist */,
 			);
 			path = RxTodoMVPUITests;
+			sourceTree = "<group>";
+		};
+		D8E6F4451E98C34900C6966B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D8E6F4431E98C34000C6966B /* InjectorUtil.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		E23598ACAFC676949AC28C20 /* Frameworks */ = {
@@ -480,6 +491,7 @@
 				3D4A6A2F1E95E77A00DED999 /* ViewController.swift in Sources */,
 				D8E6F43F1E98AAED00C6966B /* MainDelegate.swift in Sources */,
 				D8E6F42F1E97CFFB00C6966B /* BaseViewController.swift in Sources */,
+				D8E6F4441E98C34000C6966B /* InjectorUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

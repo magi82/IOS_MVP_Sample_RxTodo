@@ -103,19 +103,3 @@ extension ViewController: UITableViewDataSource {
     return displayTodoList.count
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
