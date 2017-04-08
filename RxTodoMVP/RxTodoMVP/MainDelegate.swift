@@ -9,8 +9,7 @@
 import Foundation
 
 protocol MainViewDelegate: NSObjectProtocol {
-  
-  func showData(_: String)
+  func setTodoList(_ todoList: [String])
 }
 
 protocol MainPresenterDelegate {
@@ -19,5 +18,5 @@ protocol MainPresenterDelegate {
   
   func detachView()
   
-  func setData(_: String)
+  func configure()
 }

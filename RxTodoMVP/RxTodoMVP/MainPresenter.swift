@@ -27,7 +27,9 @@ extension MainPresenter: MainPresenterDelegate {
     view = nil
   }
   
-  func setData(_ value: String) {
-    view?.showData(value)
+  func configure() {
+    let mockData: [String] = ["user1", "user2", "user3"]
+    
+    view?.setTodoList(mockData)
   }
 }
