@@ -1,5 +1,5 @@
 //
-//  InjectorUtil.swift
+//  InjectorUtils.swift
 //  RxTodoMVP
 //
 //  Created by ByungKook Hwang on 2017. 4. 8..
@@ -8,13 +8,13 @@
 
 import Foundation
 
-final class InjectorUtil {
+final class InjectorUtils {
   
   // MARK: Singleton
   
-  static let sharedInstance = InjectorUtil()
+  static let sharedInstance = InjectorUtils()
   
-  static func getInstance() -> InjectorUtil {
+  static func getInstance() -> InjectorUtils {
     return sharedInstance
   }
   

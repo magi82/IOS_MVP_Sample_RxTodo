@@ -1,5 +1,5 @@
 //
-//  MainDelegate.swift
+//  NewTodoDelegate.swift
 //  RxTodoMVP
 //
 //  Created by ByungKook Hwang on 2017. 4. 8..
@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol MainViewDelegate: NSObjectProtocol {
-  func setTodoList(_ todoList: [String])
+protocol NewTodoViewDelegate: class {
+  
 }
 
-protocol MainPresenterDelegate {
+protocol NewTodoPresenterDelegate {
   
-  func attachView(_: MainViewDelegate)
+  func attachView(_: NewTodoViewDelegate)
   
   func detachView()
   

@@ -6,11 +6,12 @@ target 'RxTodoMVP' do
   use_frameworks!
 
   # Pods for RxTodoMVP
-  pod 'RxSwift',    '~> 3.0'
-  pod 'RxCocoa',    '~> 3.0'
-  pod 'Then',       '~> 2.1'
-  pod 'Toaster',    '~> 2.0'
-  pod 'SnapKit',    '~> 3.2.0'
+  pod 'RxSwift',      '~> 3.0'
+  pod 'RxCocoa',      '~> 3.0'
+  pod 'Then',         '~> 2.1'
+  pod 'Toaster',      '~> 2.0'
+  pod 'SnapKit',      '~> 3.2.0'
+  pod 'ObjectMapper', '~> 2.2'
 
   target 'RxTodoMVPTests' do
     inherit! :search_paths

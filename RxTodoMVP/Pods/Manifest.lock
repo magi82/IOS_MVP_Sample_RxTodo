@@ -1,4 +1,5 @@
 PODS:
+  - ObjectMapper (2.2.5)
   - RxCocoa (3.3.1):
     - RxSwift (~> 3.3)
   - RxSwift (3.3.1)
@@ -7,6 +8,7 @@ PODS:
   - Toaster (2.0.3)
 
 DEPENDENCIES:
+  - ObjectMapper (~> 2.2)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
   - SnapKit (~> 3.2.0)
@@ -14,12 +16,13 @@ DEPENDENCIES:
   - Toaster (~> 2.0)
 
 SPEC CHECKSUMS:
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
   RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
   RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   Then: 8496793c8fcac95482b943909b440724c7d8d82c
   Toaster: 77c0b03d78e680bbbab0071c9c7ee392b0034010
 
-PODFILE CHECKSUM: c6ed4d813a6d3f45e4812d324866e2368c4d9063
+PODFILE CHECKSUM: 68d0f1eeafb5795001e6add0674fdece23bcc350
 
 COCOAPODS: 1.2.0

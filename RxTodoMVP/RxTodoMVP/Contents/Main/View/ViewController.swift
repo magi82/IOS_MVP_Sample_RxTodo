@@ -18,7 +18,7 @@ final class ViewController: BaseViewController {
   // MARK: Properties
 
   var presenter: MainPresenterDelegate
-  var displayTodoList: [String] = []
+  var displayTodoList: [DisplayViewModel] = []
   
   // MARK: UI Properties
   
@@ -44,17 +44,12 @@ final class ViewController: BaseViewController {
     fatalError("init(coder:) has not been implemented")
   }
   
-  deinit {
-    presenter.detachView()
-  }
-  
   // MARK: ViewController Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    presenter.attachView(self)
-    presenter.configure()
+    presenter.configure(self)
     
     navigationItem.rightBarButtonItem = addButtonItem
     view.addSubview(tableView)
@@ -73,7 +68,7 @@ final class ViewController: BaseViewController {
 
 extension ViewController: MainViewDelegate {
   
-  func setTodoList(_ todoList: [String]) {
+  func setTodoList(_ todoList: [DisplayViewModel]) {
     displayTodoList = todoList
     
     tableView.reloadData()
@@ -89,7 +84,7 @@ extension ViewController {
       .subscribe(onNext: { [weak self] in
         guard let `self` = self else { return }
         
-        let newTodoPresenter = InjectorUtil.getInstance().provideNewTodoPresenter()
+        let newTodoPresenter = InjectorUtils.getInstance().provideNewTodoPresenter()
         let newTodoViewController = NewTodoViewController(presenter: newTodoPresenter)
         let navigationViewController = UINavigationController(
           rootViewController: newTodoViewController)
@@ -115,7 +110,7 @@ extension ViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell") as UITableViewCell!
     
-    cell.textLabel?.text = displayTodoList[indexPath.row]
+    cell.textLabel?.text = displayTodoList[indexPath.row].title
     
     return cell
   }
