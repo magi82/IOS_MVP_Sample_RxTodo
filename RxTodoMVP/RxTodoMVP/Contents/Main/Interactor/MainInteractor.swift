@@ -8,11 +8,14 @@
 
 import Foundation
 
+import RxSwift
+
 final class MainInteractor {
   
   // MARK: Properties
   
   weak var callback: MainCallbackFromInteractor?
+  let dispose = DisposeBag()
 }
 
 // MARK: - MainInteractorDelegate
@@ -24,12 +27,14 @@ extension MainInteractor: MainInteractorDelegate {
   }
   
   func getList() {
-    var list: [DisplayViewModel] = []
-    
-    for value in LocalDataSource.getList() {
-      list.append(DisplayViewModel(title: value.title))
-    }
-
-    callback?.onSuccess(list)
+    Observable.from(LocalDataSource.getList())
+      .map { value in
+        DisplayViewModel(title: value.title)
+      }
+      .toArray()
+      .subscribe(onNext: { [weak self] value in
+        self?.callback?.onSuccess(value)
+      })
+      .addDisposableTo(dispose)
   }
 }
