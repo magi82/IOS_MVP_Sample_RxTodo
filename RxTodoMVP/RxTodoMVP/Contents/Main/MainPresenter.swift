@@ -23,7 +23,9 @@ extension MainPresenter: MainPresenterDelegate {
   func configure(_ view: MainViewDelegate) {
     self.view = view
     interactor.configure(self)
-    
+  }
+  
+  func getList() {
     interactor.getList()
   }
 }

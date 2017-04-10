@@ -57,6 +57,12 @@ final class ViewController: BaseViewController {
     onEventAction()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    presenter.getList()
+  }
+  
   override func setupConstraints() {
     tableView.snp.makeConstraints { make in
       make.edges.equalTo(0)

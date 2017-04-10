@@ -13,7 +13,7 @@ final class NewTodoPresenter {
   // MARK: Properties
   
   weak var view: NewTodoViewDelegate?
-  
+  var interactor: NewTodoInteractorDelegate = NewTodoInteractor()
 }
 
 // MARK: - NewTodoPresenterDelegate
@@ -22,9 +22,22 @@ extension NewTodoPresenter: NewTodoPresenterDelegate {
   
   func configure(_ view: NewTodoViewDelegate) {
     self.view = view
+    interactor.configure(self)
   }
   
   func addNewTodo(title: String, date: String, state: String) {
-    print(title + date + state)
+    interactor.addNewTodo(title: title, date: date, state: state)
+  }
+}
+
+// MARK: - NewTodoInteractorCallback
+
+extension NewTodoPresenter: NewTodoCallbackFromInteractor {
+  
+  func onSuccess() {
+    view?.dismissView()
+  }
+  
+  func onFailure() {
   }
 }

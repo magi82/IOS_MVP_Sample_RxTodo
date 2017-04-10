@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10FC15EE1E9B6A920038F1B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15E91E9B6A920038F1B2 /* ViewController.swift */; };
+		10FC15EF1E9B6A920038F1B2 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15EA1E9B6A920038F1B2 /* MainPresenter.swift */; };
+		10FC15F01E9B6A920038F1B2 /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15EB1E9B6A920038F1B2 /* MainDelegate.swift */; };
+		10FC15F11E9B6A920038F1B2 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15EC1E9B6A920038F1B2 /* MainInteractor.swift */; };
+		10FC15F21E9B6A920038F1B2 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15ED1E9B6A920038F1B2 /* MainViewModel.swift */; };
+		10FC15F71E9B6A990038F1B2 /* NewTodoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15F31E9B6A990038F1B2 /* NewTodoInteractor.swift */; };
+		10FC15F81E9B6A990038F1B2 /* NewTodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15F41E9B6A990038F1B2 /* NewTodoPresenter.swift */; };
+		10FC15F91E9B6A990038F1B2 /* NewTodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15F51E9B6A990038F1B2 /* NewTodoDelegate.swift */; };
+		10FC15FA1E9B6A990038F1B2 /* NewTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC15F61E9B6A990038F1B2 /* NewTodoViewController.swift */; };
 		3D4A6A351E95E86500DED999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4A6A341E95E86500DED999 /* AppDelegate.swift */; };
 		3DA0E2AE1E95E4FB009A98FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0E2AD1E95E4FB009A98FA /* Assets.xcassets */; };
 		3DA0E2B11E95E4FB009A98FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0E2AF1E95E4FB009A98FA /* LaunchScreen.storyboard */; };
@@ -17,16 +26,8 @@
 		BA4334C20897CC1512A1974E /* Pods_RxTodoMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80FD639F701FEBBF4E861AD /* Pods_RxTodoMVP.framework */; };
 		D8E6F42F1E97CFFB00C6966B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F42E1E97CFFB00C6966B /* BaseViewController.swift */; };
 		D8E6F4441E98C34000C6966B /* InjectorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E6F4431E98C34000C6966B /* InjectorUtils.swift */; };
-		D8E81FE51E9A0847009F1204 /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FD91E9A0847009F1204 /* MainDelegate.swift */; };
-		D8E81FE61E9A0847009F1204 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FDB1E9A0847009F1204 /* MainPresenter.swift */; };
-		D8E81FE71E9A0847009F1204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FDD1E9A0847009F1204 /* ViewController.swift */; };
-		D8E81FE81E9A0847009F1204 /* NewTodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FE01E9A0847009F1204 /* NewTodoDelegate.swift */; };
-		D8E81FE91E9A0847009F1204 /* NewTodoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FE21E9A0847009F1204 /* NewTodoPresenter.swift */; };
-		D8E81FEA1E9A0847009F1204 /* NewTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FE41E9A0847009F1204 /* NewTodoViewController.swift */; };
 		D8E81FEE1E9A09D9009F1204 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FED1E9A09D9009F1204 /* TodoModel.swift */; };
-		D8E81FF01E9A0C58009F1204 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FEF1E9A0C58009F1204 /* MainInteractor.swift */; };
 		D8E81FF51E9A1DE3009F1204 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FF41E9A1DE3009F1204 /* LocalDataSource.swift */; };
-		D8E81FF81E9A2E09009F1204 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E81FF71E9A2E09009F1204 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10FC15E91E9B6A920038F1B2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10FC15EA1E9B6A920038F1B2 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		10FC15EB1E9B6A920038F1B2 /* MainDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
+		10FC15EC1E9B6A920038F1B2 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		10FC15ED1E9B6A920038F1B2 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		10FC15F31E9B6A990038F1B2 /* NewTodoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoInteractor.swift; sourceTree = "<group>"; };
+		10FC15F41E9B6A990038F1B2 /* NewTodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoPresenter.swift; sourceTree = "<group>"; };
+		10FC15F51E9B6A990038F1B2 /* NewTodoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoDelegate.swift; sourceTree = "<group>"; };
+		10FC15F61E9B6A990038F1B2 /* NewTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoViewController.swift; sourceTree = "<group>"; };
 		2B6D999E1700D6623FBEC40E /* Pods-RxTodoMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodoMVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTodoMVP/Pods-RxTodoMVP.debug.xcconfig"; sourceTree = "<group>"; };
 		365B8B4D3A2675B4FBF2C74A /* Pods-RxTodoMVPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodoMVPUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTodoMVPUITests/Pods-RxTodoMVPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D4A6A341E95E86500DED999 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,16 +79,8 @@
 		C2D7F3CA0B90323B2A18E8D4 /* Pods_RxTodoMVPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodoMVPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E6F42E1E97CFFB00C6966B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Cores/BaseViewController.swift; sourceTree = "<group>"; };
 		D8E6F4431E98C34000C6966B /* InjectorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InjectorUtils.swift; path = Utils/InjectorUtils.swift; sourceTree = "<group>"; };
-		D8E81FD91E9A0847009F1204 /* MainDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
-		D8E81FDB1E9A0847009F1204 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		D8E81FDD1E9A0847009F1204 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8E81FE01E9A0847009F1204 /* NewTodoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoDelegate.swift; sourceTree = "<group>"; };
-		D8E81FE21E9A0847009F1204 /* NewTodoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoPresenter.swift; sourceTree = "<group>"; };
-		D8E81FE41E9A0847009F1204 /* NewTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTodoViewController.swift; sourceTree = "<group>"; };
 		D8E81FED1E9A09D9009F1204 /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
-		D8E81FEF1E9A0C58009F1204 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		D8E81FF41E9A1DE3009F1204 /* LocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
-		D8E81FF71E9A2E09009F1204 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,71 +208,24 @@
 		D8E81FD71E9A0847009F1204 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				D8E81FF61E9A2DFA009F1204 /* ViewModel */,
-				D8E81FD81E9A0847009F1204 /* Interactor */,
-				D8E81FDA1E9A0847009F1204 /* Presenter */,
-				D8E81FDC1E9A0847009F1204 /* View */,
-				D8E81FD91E9A0847009F1204 /* MainDelegate.swift */,
+				10FC15E91E9B6A920038F1B2 /* ViewController.swift */,
+				10FC15EA1E9B6A920038F1B2 /* MainPresenter.swift */,
+				10FC15EB1E9B6A920038F1B2 /* MainDelegate.swift */,
+				10FC15EC1E9B6A920038F1B2 /* MainInteractor.swift */,
+				10FC15ED1E9B6A920038F1B2 /* MainViewModel.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		D8E81FD81E9A0847009F1204 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				D8E81FEF1E9A0C58009F1204 /* MainInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		D8E81FDA1E9A0847009F1204 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				D8E81FDB1E9A0847009F1204 /* MainPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		D8E81FDC1E9A0847009F1204 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D8E81FDD1E9A0847009F1204 /* ViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D8E81FDE1E9A0847009F1204 /* NewTodo */ = {
 			isa = PBXGroup;
 			children = (
-				D8E81FDF1E9A0847009F1204 /* Interactor */,
-				D8E81FE11E9A0847009F1204 /* Presenter */,
-				D8E81FE31E9A0847009F1204 /* View */,
-				D8E81FE01E9A0847009F1204 /* NewTodoDelegate.swift */,
+				10FC15F31E9B6A990038F1B2 /* NewTodoInteractor.swift */,
+				10FC15F41E9B6A990038F1B2 /* NewTodoPresenter.swift */,
+				10FC15F51E9B6A990038F1B2 /* NewTodoDelegate.swift */,
+				10FC15F61E9B6A990038F1B2 /* NewTodoViewController.swift */,
 			);
 			path = NewTodo;
-			sourceTree = "<group>";
-		};
-		D8E81FDF1E9A0847009F1204 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		D8E81FE11E9A0847009F1204 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				D8E81FE21E9A0847009F1204 /* NewTodoPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		D8E81FE31E9A0847009F1204 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D8E81FE41E9A0847009F1204 /* NewTodoViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		D8E81FEC1E9A09C4009F1204 /* Models */ = {
@@ -287,14 +242,6 @@
 				D8E81FF41E9A1DE3009F1204 /* LocalDataSource.swift */,
 			);
 			path = DataSource;
-			sourceTree = "<group>";
-		};
-		D8E81FF61E9A2DFA009F1204 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				D8E81FF71E9A2E09009F1204 /* MainViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E23598ACAFC676949AC28C20 /* Frameworks */ = {
@@ -587,18 +534,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8E81FE71E9A0847009F1204 /* ViewController.swift in Sources */,
-				D8E81FEA1E9A0847009F1204 /* NewTodoViewController.swift in Sources */,
-				D8E81FE91E9A0847009F1204 /* NewTodoPresenter.swift in Sources */,
+				10FC15EE1E9B6A920038F1B2 /* ViewController.swift in Sources */,
+				10FC15F71E9B6A990038F1B2 /* NewTodoInteractor.swift in Sources */,
 				D8E81FEE1E9A09D9009F1204 /* TodoModel.swift in Sources */,
-				D8E81FE61E9A0847009F1204 /* MainPresenter.swift in Sources */,
-				D8E81FF81E9A2E09009F1204 /* MainViewModel.swift in Sources */,
+				10FC15FA1E9B6A990038F1B2 /* NewTodoViewController.swift in Sources */,
 				3D4A6A351E95E86500DED999 /* AppDelegate.swift in Sources */,
 				D8E81FF51E9A1DE3009F1204 /* LocalDataSource.swift in Sources */,
-				D8E81FF01E9A0C58009F1204 /* MainInteractor.swift in Sources */,
-				D8E81FE51E9A0847009F1204 /* MainDelegate.swift in Sources */,
-				D8E81FE81E9A0847009F1204 /* NewTodoDelegate.swift in Sources */,
+				10FC15F81E9B6A990038F1B2 /* NewTodoPresenter.swift in Sources */,
 				D8E6F42F1E97CFFB00C6966B /* BaseViewController.swift in Sources */,
+				10FC15F21E9B6A920038F1B2 /* MainViewModel.swift in Sources */,
+				10FC15F91E9B6A990038F1B2 /* NewTodoDelegate.swift in Sources */,
+				10FC15F11E9B6A920038F1B2 /* MainInteractor.swift in Sources */,
+				10FC15F01E9B6A920038F1B2 /* MainDelegate.swift in Sources */,
+				10FC15EF1E9B6A920038F1B2 /* MainPresenter.swift in Sources */,
 				D8E6F4441E98C34000C6966B /* InjectorUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,6 +691,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2B6D999E1700D6623FBEC40E /* Pods-RxTodoMVP.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxTodoMVP/Info.plist;
@@ -757,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7EA350BFB73E2810D18BB97D /* Pods-RxTodoMVP.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxTodoMVP/Info.plist;

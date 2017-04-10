@@ -104,8 +104,13 @@ extension NewTodoViewController {
       .addDisposableTo(dispose)
     
     okButton.rx.tap
+      .map({ [weak self] in
+        return self?.todoTextField.text
+      })
       .subscribe(onNext: { [weak self] in
-        self?.presenter.addNewTodo(title: "job", date: "2017-04-10", state: "Completed")
+        if let value = $0 {
+          self?.presenter.addNewTodo(title: value, date: "2017-04-10", state: "Completed")
+        }
       })
       .addDisposableTo(dispose)
     

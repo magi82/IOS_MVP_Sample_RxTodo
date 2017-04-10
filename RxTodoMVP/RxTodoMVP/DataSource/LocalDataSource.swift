@@ -22,4 +22,8 @@ final class LocalDataSource {
   static func getList() -> [TodoModel] {
     return list
   }
+  
+  static func addList(model: TodoModel) {
+    list.append(model)
+  }
 }
