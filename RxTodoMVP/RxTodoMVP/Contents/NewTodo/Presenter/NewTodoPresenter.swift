@@ -12,7 +12,7 @@ final class NewTodoPresenter {
   
   // MARK: Properties
   
-  weak fileprivate var view: NewTodoViewDelegate?
+  weak var view: NewTodoViewDelegate?
   
 }
 
@@ -20,14 +20,11 @@ final class NewTodoPresenter {
 
 extension NewTodoPresenter: NewTodoPresenterDelegate {
   
-  func attachView(_ view: NewTodoViewDelegate) {
+  func configure(_ view: NewTodoViewDelegate) {
     self.view = view
   }
   
-  func detachView() {
-    view = nil
-  }
-  
-  func configure() {
+  func addNewTodo(title: String, date: String, state: String) {
+    print(title + date + state)
   }
 }

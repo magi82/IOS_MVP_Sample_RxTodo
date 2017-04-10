@@ -29,7 +29,7 @@ extension MainInteractor: MainInteractorDelegate {
   func getList() {
     Observable.from(LocalDataSource.getList())
       .map { value in
-        DisplayViewModel(title: value.title)
+        return DisplayViewModel(title: value.title)
       }
       .toArray()
       .subscribe(onNext: { [weak self] value in

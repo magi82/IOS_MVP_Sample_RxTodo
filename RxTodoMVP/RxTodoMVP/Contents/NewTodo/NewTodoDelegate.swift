@@ -8,15 +8,19 @@
 
 import Foundation
 
+// MARK: - View implement
+
 protocol NewTodoViewDelegate: class {
+  var presenter: NewTodoPresenterDelegate { get set }
   
+  func dismissView()
 }
 
+// MARK: - Presenter implement
+
 protocol NewTodoPresenterDelegate {
+  weak var view: NewTodoViewDelegate? { get set }
   
-  func attachView(_: NewTodoViewDelegate)
-  
-  func detachView()
-  
-  func configure()
+  func configure(_: NewTodoViewDelegate)
+  func addNewTodo(title: String, date: String, state: String)
 }

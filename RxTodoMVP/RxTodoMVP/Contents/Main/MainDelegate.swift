@@ -11,12 +11,17 @@ import Foundation
 // MARK: - View implement
 
 protocol MainViewDelegate: class {
+  var presenter: MainPresenterDelegate { get set }
+  
   func setTodoList(_ todoList: [DisplayViewModel])
 }
 
 // MARK: - Presenter implement
 
 protocol MainPresenterDelegate {
+  weak var view: MainViewDelegate? { get set }
+  var interactor: MainInteractorDelegate { get set }
+  
   func configure(_: MainViewDelegate)
 }
 
@@ -28,7 +33,8 @@ protocol MainCallbackFromInteractor: class {
 // MARK: - Interactor implement
 
 protocol MainInteractorDelegate {
-  func configure(_: MainCallbackFromInteractor)
+  weak var callback: MainCallbackFromInteractor? { get set }
   
+  func configure(_: MainCallbackFromInteractor)
   func getList()
 }

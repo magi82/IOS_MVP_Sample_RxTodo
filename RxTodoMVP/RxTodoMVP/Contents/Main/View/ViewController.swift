@@ -75,7 +75,7 @@ extension ViewController: MainViewDelegate {
   }
 }
 
-// MARK: RX
+// MARK: EventAction
 
 extension ViewController {
   
@@ -86,9 +86,7 @@ extension ViewController {
         
         let newTodoPresenter = InjectorUtils.getInstance().provideNewTodoPresenter()
         let newTodoViewController = NewTodoViewController(presenter: newTodoPresenter)
-        let navigationViewController = UINavigationController(
-          rootViewController: newTodoViewController)
-        self.present(navigationViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(newTodoViewController, animated: true)
       })
       .addDisposableTo(dispose)
   }
