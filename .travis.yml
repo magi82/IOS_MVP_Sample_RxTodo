@@ -16,11 +16,13 @@ env:
   matrix:
     - SDK="$IOS_SDK"  DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.3"
 
+podfile: RxTodoMVP/Podfile
+
 install:
   - bundle install --deployment
   - bundle exec pod --version
   - bundle exec pod repo update --verbose
-  - bundle exec pod install
+  - bundle exec pod install --project-directory=RxTodoMVP
 
 before_script:
   - set -o pipefail
