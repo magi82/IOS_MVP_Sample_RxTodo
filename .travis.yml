@@ -5,8 +5,8 @@ rvm:
   - 2.3
 
 cache:
-
-
+  - bundler
+  - cocoapods
 
 env:
   global:
