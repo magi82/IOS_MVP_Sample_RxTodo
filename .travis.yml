@@ -21,7 +21,7 @@ podfile: RxTodoMVP/Podfile
 install:
   - bundle install --deployment
   - bundle exec pod --version
-  - bundle exec pod repo update --verbose
+  - bundle exec pod repo update
   - bundle exec pod install --project-directory=RxTodoMVP
 
 before_script:
