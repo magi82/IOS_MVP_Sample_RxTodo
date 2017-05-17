@@ -14,12 +14,12 @@ env:
     - SCHEME="RxTodoMVP"
     - IOS_SDK="iphonesimulator10.3"
   matrix:
-    - SDK="$IOS_SDK"  DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.3"
+    - SDK="$IOS_SDK"
+    - DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=10.3"
 
 podfile: RxTodoMVP/Podfile
 
 install:
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
   - bundle install --deployment
   - bundle exec pod --version
   - bundle exec pod repo update --silent
