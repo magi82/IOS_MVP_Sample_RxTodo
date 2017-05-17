@@ -19,6 +19,7 @@ env:
 podfile: RxTodoMVP/Podfile
 
 install:
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
   - bundle install --deployment
   - bundle exec pod --version
   - bundle exec pod repo update --silent
